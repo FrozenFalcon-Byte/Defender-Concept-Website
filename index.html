@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Defender</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-mode">
     <div class="main">
         <nav class="navbar">
             <a href="#landing-page">
                 <h1>LAND ROVER</h1>
             </a>
+            <button onclick="toggleLightMode()">Dark Mode <i class="ri-moon-line"></i></button>
         </nav>
         <div id="landing-page">
             <h1 class="moving-text">DEFENDER</h1>
             <!-- <img src="./images/lr.png" alt=""> -->
-            <video src="./images/lr.mp4" autoplay loop muted></video>
+            <video preload="none" poster="./images/defender2.jpg" src="./images/lr.mp4" autoplay loop muted></video>
             <h2>Together we embrace the impossible.</h2>
         </div>
         <div class="border-div">
